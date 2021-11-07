@@ -23,8 +23,8 @@ export function Footer() {
             </p>
             <ul className="footer__list">
                 <li><Icon img={iconFacebook} /></li>
-                <li><Icon img={iconTwitter} /></li>
                 <li><Icon img={iconInstagram} /></li>
+                <li><Icon img={iconTwitter} /></li>
             </ul>
         </footer>
     )

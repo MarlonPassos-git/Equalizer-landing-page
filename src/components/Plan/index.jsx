@@ -5,7 +5,7 @@ import './style.scss';
 export function Plan() {
     return (
         <section className="plan">
-            <img className="phone" src={phone} alt="phone" />
+            <img className="phone" alt="" src={phone} alt="phone" />
             <Card />
         </section>
     )
