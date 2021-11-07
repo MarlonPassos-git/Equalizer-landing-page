@@ -1,11 +1,11 @@
 
-<h1 class="line-1 anim-typewriter">Chalenger</h1>
+<h1 align="center" class="line-1 anim-typewriter">Chalenger</h1>
 
 
 
-<img class="img__project " src="./screen.gif">
+<img align="center"  class="img__project " src="./screen.gif">
 
-<div class="links">
+<div align="center"  class="links">
     <a href="#the_challenge">The challenge</a> |
      <a href="#links">Links</a> |
       <a href="#built_with">Built with</a> |
@@ -64,13 +64,13 @@ Your users should be able to:
 
 
 <h2 id="resources">📚 Resources</h2>
-<hr>
+
 
 - Place where I got the icons, [icon8](https://icons8.com.br/ )
 - Documentation [react JS](https://reactjs.org/docs/getting-started.html) 
 
 
 <h2 id="author">😬 Author</h2>
-<hr>
+
 
 - Frontend Mentor - [@MarlonPassos-git](https://www.frontendmentor.io/profile/MarlonPassos-git)
