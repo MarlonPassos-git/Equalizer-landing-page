@@ -9,6 +9,11 @@
     margin-left: flex(24, 165);    
     border-radius: rem(12);
 
+    background-image: url("https://svgur.com/i/bro.svg");
+    background-size: 312px 468px;
+    background-position:  center -60px;
+    background-repeat: no-repeat;
+
      > * {
         grid-area: 1/ -1;
     } 
