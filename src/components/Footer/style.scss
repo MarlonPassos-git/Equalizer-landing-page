@@ -1,0 +1,63 @@
+@import "../base.scss";
+
+.footer {
+    @include wrap;
+    margin-top: flex(124, 170);
+    display: grid;
+    grid-template: 
+        "logo paragraph list"
+    ;
+    justify-content: space-between;
+
+    @media (max-width: 1000px) {
+        grid-template: 
+        "logo logo"
+        "paragraph list"
+    ;
+    }
+
+    @media (max-width: 700px) {
+        grid-template: 
+        "logo"
+        "paragraph"
+        "list"
+    ;
+    }
+
+
+
+    .logo {
+        grid-area: logo;
+        margin-bottom: rem(32);
+
+    }
+
+    &__paragraph {
+        grid-area: paragraph;
+        max-width: rem(366);
+        margin-bottom: rem(52);
+    }
+
+    &__list {
+        grid-area: list;
+        list-style: none;
+        display: flex;
+        gap: rem(20);
+        margin-top: rem(10);
+    }
+}
+
+.list__item svg path{
+    width:rem(20);
+    height: rem(20);
+
+    &:hover {
+        
+        fill: #FA7453;
+    }
+}
+
+.list__item {
+    cursor: pointer;
+    margin-bottom: rem(20);
+}

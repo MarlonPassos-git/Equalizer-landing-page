@@ -1,0 +1,75 @@
+// Functions 
+@function rem($pixels, $contexto: 16) {
+    @return ($pixels / $contexto) * 1rem;
+}
+
+@function flex($minSize, $maxSize, $mobileWidth: 375,
+    $decktopWidth: 1440, $rem: 16) {
+
+    $a: $mobileWidth / $rem;
+    $b: $decktopWidth / $rem;
+    $c: $minSize / $rem;
+    $d: $maxSize / $rem;
+    $e: ($d - $c) / ($b - $a);
+    $f: $a * - $e + $c;
+    $g: round($f * 10000) / 10000;
+    $h: round($e * 1000000) / 10000 * 1vw;
+
+    @return clamp(#{$c * 1rem}, #{$g * 1rem} + #{$h}, #{$d * 1rem})
+}
+
+@function flexMax($minSize, $maxSize, $mobileWidth: 375,
+    $decktopWidth: 1440, $rem: 16) {
+
+    $a: $mobileWidth / $rem;
+    $b: $decktopWidth / $rem;
+    $c: $minSize / $rem;
+    $d: $maxSize / $rem;
+    $e: ($d - $c) / ($b - $a);
+    $f: $a * - $e + $c;
+    $g: round($f * 10000) / 10000;
+    $h: round($e * 1000000) / 10000 * 1vw;
+
+    @return max(#{$g * 1rem} + #{$h}, #{$d * 1rem})
+}
+
+@function flexForce( $minSize, $maxSize, $mobileWidth: 375, $decktopWidth: 1440) {
+
+    $a: $maxSize * 1px;
+    $b: $minSize - $maxSize;
+    $c: $decktopWidth - $mobileWidth;
+    $d: $minSize * 1px;
+    $e: $decktopWidth * 1px;
+
+    @return clamp(#{$a}, calc(#{$a} + #{$b} * ((#{$e} - 100vw) / #{$c})), #{$d}) 
+}
+
+@function flexReverse( $minSize, $maxSize, $mobileWidth: 375, $decktopWidth: 1440) {
+
+    $maxSizePx: $maxSize * 1px;
+    $sizeDifference: $minSize - $maxSize;
+    $screenSizeDifference: $decktopWidth - $mobileWidth;
+    $minSizePx: $minSize * 1px;
+    $decktopWidthPx: $decktopWidth * 1px;
+
+    @return clamp(#{$minSizePx}, calc(#{$minSizePx} + -1 * (#{$sizeDifference} * ((#{$decktopWidthPx} - 100vw) / #{$screenSizeDifference}))), #{$maxSizePx}) 
+}
+
+@function flexMax($minSize, $maxSize, $mobileWidth: 375,
+    $decktopWidth: 1440, $rem: 16) {
+
+    $a: $mobileWidth / $rem;
+    $b: $decktopWidth / $rem;
+    $c: $minSize / $rem;
+    $d: $maxSize / $rem;
+    $e: ($d - $c) / ($b - $a);
+    $f: $a * - $e + $c;
+    $g: round($f * 10000) / 10000;
+    $h: round($e * 1000000) / 10000 * 1vw;
+
+    @return calc(#{$g * 1rem} + #{$h})
+}
+
+@mixin wrap {
+    padding: 0 flex(24, 165);
+}

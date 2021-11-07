@@ -1,0 +1,67 @@
+@import "../base.scss";
+
+.card {
+    width: flexMax(375, 446);
+    height: flex(546, 625);
+    justify-self: end;
+
+    background: #FA7453;
+    border-radius: rem(12);
+    padding: flex(48, 58) flex(36, 59) rem(48) flex(36, 54);
+    margin-right: flex(0, 95);
+    display: grid;
+    grid-template-columns: flex(296, 333);
+    margin-top: flexReverse(0, 270);
+    transform: translateY(rem(90));
+
+    @media (max-width: 450px) {
+        width: 100vw;
+        margin-right: 0;
+        grid-template-columns: 1fr;
+        padding-bottom: rem(10);
+    }
+
+    @media (max-width: 765px)  {
+        justify-self: center;
+    }
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: flex(32, 40);
+    line-height: flex(40, 52);
+    color: #FCFAF9;
+    width: 100%;
+    height: rem(52);
+}
+
+.card__paragraph {
+    font-weight: normal;
+    font-size: flex(18, 20);
+    line-height: flex(28, 34);
+    color: #FCFAF9;
+    width: 100%;
+    height: rem(170);
+
+}
+
+.card__period {
+    height: rem(32);
+    font-weight: normal;
+    font-size: rem(20);
+    line-height: rem(32);
+    letter-spacing: rem(-0.2);
+    color: #FCFAF9;
+    margin: rem(10) 0 rem(50); 
+    display: flex;
+    align-items: center;
+}
+
+.card__value {
+    height: rem(52);
+    font-weight: bold;
+    font-size: rem(65);
+    line-height: rem(52);
+    color: #FCFAF9;
+    margin-right: rem(15);
+}

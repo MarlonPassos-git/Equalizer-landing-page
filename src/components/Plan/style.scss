@@ -1,0 +1,27 @@
+@import "../base.scss";
+
+
+.plan {
+    background-color: #191826;
+    width: flex(375, 1110);
+    min-height: rem(600);
+    display: grid;
+    margin-left: flex(24, 165);    
+    border-radius: rem(12);
+
+     > * {
+        grid-area: 1/ -1;
+    } 
+
+    @media (max-width: 450px) {
+        width: 100vw;
+        margin: 0;
+    }
+}
+
+.phone {
+    width: flex(208, 312);
+    height: flex(430, 642);
+    margin-left:  flex(80, 102);
+    transform: translateY(flexForce(-98, -213));
+}

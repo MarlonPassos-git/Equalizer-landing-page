@@ -1,0 +1,15 @@
+@import "../base.scss";
+
+header {
+    
+    height: flex(112, 156);
+    display: flex;
+    align-items: center;
+    @include wrap;
+  
+}
+
+.logo {
+    width: rem(146.06);
+    height: rem(32);
+}

@@ -1,0 +1,47 @@
+@import "../base.scss";
+
+
+.button {
+    border-radius: rem(12);
+    height: rem(61);
+    font-weight: bold;
+    font-size: rem(18);
+    line-height: rem(32);
+    text-align: center;
+    letter-spacing: rem(-0.18);
+    color: #FCFAF9;
+    width: 100%;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__icon {
+        height: rem(20);
+        width: rem(17);
+        margin-right: rem(8);
+    }
+
+    &__text {
+        width: auto;
+    }
+}
+
+.button:nth-of-type(1) {
+    background-color: #191826;
+    color: #FCFAF9;
+
+    &:hover {
+        background-color: #66E2DC;
+    }
+}
+
+.button:nth-of-type(2) {
+    background-color: #FCFAF9;
+    color: #191826;
+
+    &:hover {
+        background-color: #FFB964;
+    }
+}

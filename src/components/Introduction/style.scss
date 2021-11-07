@@ -1,0 +1,32 @@
+@import "../base.scss";
+
+
+.introduction {
+    @include wrap;
+    margin: flex(24, 65) 0 flex(166, 321);
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: flex(40, 88);
+    line-height: flex(48, 88);
+    letter-spacing: flex(-1, -0.454545);
+    color: #191826;
+    max-width: rem(1015);
+    margin-bottom: flex(20, 40);
+    text-align: left;
+}
+
+.introduction__paragraph {
+    font-size: flex(16, 18);
+    line-height: flex(26, 28);
+    color: #191826;
+    text-align: left;
+    width: flexMax(327, 825);
+    max-width: rem(650);
+
+    @media (max-width: 765px) {
+        width: 100%;
+    }
+}

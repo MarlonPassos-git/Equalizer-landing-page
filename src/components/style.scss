@@ -1,0 +1,30 @@
+@import "base";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #FCFAF9;
+    overflow-x: hidden;
+
+    background-image: url("https://uploaddeimagens.com.br/images/003/524/756/full/bg-main-desktop.png?1636320190"), url('https://svgur.com/i/brn.svg');
+    background-repeat: no-repeat no-repeat;
+    background-position: -150px -200px, right -40px;
+    background-size: cover, flex(266, 312, 768, 1440) flex(400, 468, 768, 1440);
+
+    @media (max-width: 768px) {
+        background-image: url("https://uploaddeimagens.com.br/images/003/524/767/original/bg-main-tablet.png?1636320664"), url('https://svgur.com/i/brn.svg');
+        background-position: -180px -100px, right -40px;
+        background-size: 100vh 100vw, flex(150, 266, 375, 768) flex(250, 400, 375, 768);
+    }
+
+    @media (max-width: 500px) {
+        background-image: url("https://uploaddeimagens.com.br/images/003/524/767/original/bg-main-tablet.png?1636320664");
+    }
+
+    @media (max-width: 375px) {
+        background-image: url("https://uploaddeimagens.com.br/images/003/524/780/original/bg-main-mobile.png?1636321500");
+        background-size: contain;
+        background-position: 90px -140px;
+
+    }
+}
