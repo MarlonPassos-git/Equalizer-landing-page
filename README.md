@@ -1,5 +1,5 @@
 
-<h1 align="center" class="line-1 anim-typewriter">Chalenger</h1>
+<h1 align="center" class="line-1 anim-typewriter">Equalizer landing page</h1>
 
 
 
@@ -27,7 +27,7 @@ Your users should be able to:
 <h2 id="links">🔗 Links</h2>
 
 - Solution URL: []()
-- Live Site URL: []()
+- Live Site URL: [https://equalizer-landing-page.vercel.app/](https://equalizer-landing-page.vercel.app/)
 
 
 <h2 id="built_with">👷‍♂️ Built with</h2>
